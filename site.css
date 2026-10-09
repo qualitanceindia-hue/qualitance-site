@@ -1,0 +1,18 @@
+:root{--ink:#0E2233;--base:#F3F5F4;--tint:#E3EBEE;--line:#C9D5DA;--teal:#0F766E;--teal-d:#0B5A54;--muted:#4A5E6B}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--base);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.brand{font:700 22px "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav{display:flex;gap:24px;align-items:center;font-size:15px}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 20px;border-radius:4px;font:600 15px "Public Sans",sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--teal-d)}.btn:disabled{background:#8AA3A0;cursor:not-allowed}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--muted)}
+.page{padding:56px 0 72px}.page h1{font-size:clamp(34px,4.6vw,54px);font-weight:700}
+.lede{font-size:19px;color:var(--muted);max-width:38em;margin:16px 0 0}
+input,select,textarea{width:100%;font:inherit;padding:11px 13px;border:1px solid var(--ink);border-radius:2px;background:#fff;color:var(--ink)}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+@media(max-width:860px){nav a:not(.btn){display:none}}

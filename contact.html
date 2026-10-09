@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Qualitance India | BIS ISI, CRS and FMCS Consultants, Noida</title>
+<meta name="description" content="Contact Qualitance India for BIS ISI Mark, CRS and FMCS certification. Send your product details or book a video call.">
+<link rel="canonical" href="https://qualitanceindia.in/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>.cg{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;margin-top:40px}dl{margin:0}dl div{padding:14px 0;border-top:1px solid var(--line)}dt{font-weight:600}dd{margin:2px 0 0;color:var(--muted)}form{display:grid;gap:16px}.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}#done{background:#fff;border:2px solid var(--ink);padding:20px;margin-top:20px}#done pre{white-space:pre-wrap;font:inherit;background:var(--base);padding:12px}@media(max-width:860px){.cg,.row{grid-template-columns:1fr;gap:24px}}</style>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="index.html">Qualitance India</a>
+<nav aria-label="Main"><a href="certifications.html">Certifications</a><a href="locations.html">Locations</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a><a class="btn" href="book.html">Book a video call</a></nav></div></header>
+<main><div class="wrap page">
+<h1>Contact us</h1>
+<p class="lede">Tell us what you make or import. We will tell you which approvals apply and what they involve.</p>
+<div class="cg">
+<dl>
+<div><dt>Phone</dt><dd><a data-cfg="phone" data-cfg-link="tel" href="tel:+919310615170">+91 9310615170</a> / <a data-cfg="phone2" href="tel:+918527631041">+91 8527631041</a></dd></div>
+<div><dt>WhatsApp</dt><dd><a data-cfg="whatsapp" data-cfg-link="wa" href="https://wa.me/919310615170">+91 9310615170</a></dd></div>
+<div><dt>Email</dt><dd><a data-cfg="email" data-cfg-link="mail" href="mailto:info@qualitanceindia.com">info@qualitanceindia.com</a></dd></div>
+<div><dt>Office</dt><dd data-cfg="address">D-15, Ground Floor, Office No. 7, Sector 3, Noida, Uttar Pradesh 201301</dd></div>
+<div><dt>Hours</dt><dd data-cfg="hours">Monday to Saturday</dd></div>
+<div><dt>Follow us</dt><dd><a href="https://www.linkedin.com/company/qualitance-india/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://www.facebook.com/people/Qualitance-India/61562079131571/" target="_blank" rel="noopener noreferrer">Facebook</a>, <a href="https://www.instagram.com/qualitanceindia/" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://x.com/qualitanceindia" target="_blank" rel="noopener noreferrer">X</a>, <a href="https://www.youtube.com/@qualitanceindia" target="_blank" rel="noopener noreferrer">YouTube</a></dd></div>
+<div><dt>Prefer a video call?</dt><dd><a href="book.html">Pick a date and time</a></dd></div>
+</dl>
+<div><form id="f">
+<div class="row"><div><label for="n">Name</label><input id="n" required autocomplete="name"></div><div><label for="c">Company</label><input id="c" autocomplete="organization"></div></div>
+<div class="row"><div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div><div><label for="p">Phone or WhatsApp</label><input id="p" type="tel" required autocomplete="tel"></div></div>
+<div class="row"><div><label for="r">You are a</label><select id="r"><option>Indian manufacturer</option><option>Importer or seller</option><option>Overseas factory</option><option>Other</option></select></div><div><label for="pr">Product</label><input id="pr" placeholder="For example: LED TV"></div></div>
+<div><label for="m">Message</label><textarea id="m" rows="4"></textarea></div>
+<button class="btn" type="submit">Send enquiry</button>
+</form>
+<div id="done" hidden><p><strong>Enquiry ready.</strong> If it did not open WhatsApp or your email app, copy it and send it to us.</p><pre id="txt"></pre><button class="btn" id="cp" type="button">Copy enquiry</button></div></div>
+</div>
+</div></main>
+<footer><div class="wrap">&copy; 2026 Qualitance India. Information on this site is for guidance and is not legal advice.</div></footer>
+<script src="config.js"></script><script src="site.js" defer></script>
+<script>
+document.getElementById("f").addEventListener("submit",function(ev){ev.preventDefault();var S=window.SITE||{},v=function(i){return document.getElementById(i).value.trim()};
+var t=["Enquiry from website","Name: "+v("n"),"Company: "+v("c"),"Email: "+v("e"),"Phone: "+v("p"),"Role: "+v("r"),"Product: "+v("pr"),"Message: "+v("m")].join("\n");
+document.getElementById("txt").textContent=t;document.getElementById("done").hidden=false;
+if(S.whatsapp)window.open("https://wa.me/"+S.whatsapp.replace(/\D/g,"")+"?text="+encodeURIComponent(t),"_blank");else if(S.email)location.href="mailto:"+S.email+"?subject="+encodeURIComponent("Website enquiry")+"&body="+encodeURIComponent(t)});
+document.getElementById("cp").onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(document.getElementById("txt").textContent);this.textContent="Copied"};
+</script>
+</body>
+</html>
